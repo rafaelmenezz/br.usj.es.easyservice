@@ -203,8 +203,8 @@
               "
               uk-grid
             >
-              <div class="uk-width-1-2 uk-margin-auto">
-                <p uk-margin>
+              <div class="uk-width-1-2 uk-margin-auto ">
+                <p class="uk-light" uk-margin>
                   Desenvolvido pela equipe superstars
                   <a href="#">EasyService</a>. São José-SC, 2021
                 </p>
