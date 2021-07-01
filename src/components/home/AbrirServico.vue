@@ -1,7 +1,7 @@
 <template>
   <div id="abrir-servico" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-      <h2 class="uk-modal-title">Upgrade de Conta</h2>
+      <h2 class="uk-modal-title">Abrir Serviço</h2>
       <form class="uk-form-stacked">
         <div class="uk-margin">
           <div class="uk-form-controls">
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="uk-align-right uk-margin">
-          <button class="uk-button uk-button-default uk-modal-close">cancelar</button>
+          <button class="uk-button uk-button-default uk-modal-close">Cancelar</button>
           <button class="uk-button uk-button-primary">Salvar</button>
         </div>
       </form>

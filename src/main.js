@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueLayers from 'vuelayers'
 import App from './App.vue'
 import Page from './Page.vue'
-import Cad from './Cadastro.vue'
 import 'vuelayers/lib/style.css' 
 
 
@@ -10,14 +9,14 @@ import 'vuelayers/lib/style.css'
 
   Vue.use(VueLayers, {
     // global data projection, see https://vuelayers.github.io/#/quickstart?id=global-data-projection
-    // dataProjection: 'EPSG:4326',
+    dataProjection: 'EPSG:4326',
   })
 
 Vue.config.productionTip = false
 const routes = {
   '/': Page,
-  '/easyservice': App,
-  '/cadastro': Cad
+  '/easyservice': App
+ 
 }
 
 new Vue({
