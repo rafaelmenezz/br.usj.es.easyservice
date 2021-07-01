@@ -21,4 +21,5 @@ export default {
 </script>
 
 <style>
+@import "~vuelayers/dist/vuelayers.css";
 </style>

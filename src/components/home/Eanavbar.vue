@@ -9,16 +9,15 @@
                     href="#pesquisa" 
                     class=" uk-button"
                     style="color: #000"
-                    uk-icon="icon: search; ratio: 2"
+                    uk-icon="icon: search; ratio: 1"
                   uk-toggle></a>
-                 
                 </li>
               </ul>
             </div>
           </div>
 
-          <a class="uk-navbar-item uk-logo" href="#">
-            <img src="imagens/icon.svg" width="50" alt="" />
+          <a class="uk-navbar-item uk-logo" href="/easyservice">
+            <img src="imagens/icon.svg" width="36" alt="" />
           </a>
           <div class="uk-navbar-center-right">
             <div>
@@ -28,8 +27,7 @@
                     href="#panel-user"
                     class=""
                     style="color: #000"
-                    uk-icon="icon: user; ratio: 2"
-
+                    uk-icon="icon: user; ratio: 1"
                   uk-toggle></a>
               
                 </li>

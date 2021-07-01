@@ -16,9 +16,6 @@
             </ul>
           </li>
           <li>
-            <a href="#abrir-servico" uk-toggle>Abrir Serviço</a>
-          </li>
-          <li>
             <a href="#upgrade" uk-toggle>Upgrade de Conta</a>
           </li>
         </ul>

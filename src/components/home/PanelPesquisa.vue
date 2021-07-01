@@ -16,7 +16,7 @@
               ></a>
               <input class="uk-input" type="text" />
             </div>
-          </div>
+          </div> 
         </div>
         <div class="uk-margin">
           <label class="uk-form-label" for="form-stacked-text"
@@ -33,6 +33,14 @@
             />
           </div>
         </div>
+         <div class="uk-text-center">
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+
+          <li>
+            <a href="#abrir-servico" uk-toggle>Solicitar Serviço</a>
+          </li>
+        </ul>
+      </div>
       </form>
       <div></div>
     </div>

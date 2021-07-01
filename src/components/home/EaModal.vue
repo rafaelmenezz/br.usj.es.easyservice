@@ -1,7 +1,8 @@
 <template>
   <div id="upgrade" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-      <h2 class="uk-modal-title">Upgrade de Conta</h2>
+      <div v-show="!isCadastrar">
+         <h2 class="uk-modal-title">Upgrade de Conta</h2>
 
       <p class="uk-text-justify">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, itaque
@@ -29,12 +30,94 @@
       </div>
       <p class="uk-text-right">
         <button
-          class="uk-button uk-button-default uk-modal-close"
+          class="uk-button uk-button-default"
           type="button"
+          @click.prevent="cadastrar"
         >
-          Cancel
+          Continue
         </button>
       </p>
+      </div>
+
+      <div v-show="isCadastrar">
+         <h2 class="uk-modal-title">Cadastro - Perfil Profissional</h2>
+      <div class="uk-panel uk-width-1-1" style="height: 6vh">
+     
+      </div>
+
+      <div class="uk-panel uk-panel-scrollable" style="height: 50vh">
+        <form class="uk-form-stacked">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="nome">Razão Social</label>
+            <div class="uk-form-controls">
+              <input
+                class="uk-input"
+                id="nome"
+                type="text"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="nome">Nome de Fantasia</label>
+            <div class="uk-form-controls">
+              <input
+                class="uk-input"
+                id="nome"
+                type="text"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+         
+          <div class="uk-margin">
+            <label class="uk-form-label" for="cnpj">CNPJ</label>
+            <div class="uk-form-controls">
+              <input
+                class="uk-input"
+                id="cnpj"
+                type="text"
+                placeholder="XX.XXX.XXX/YYYY-ZZ"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="telefone">Telefone</label>
+            <div class="uk-form-controls">
+              <input
+                class="uk-input"
+                id="telefone"
+                type="text"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+           <div class="uk-margin uk-text-center">
+            <label class="uk-form-label" for="nome">Atividades</label>
+            <select name="selectAtividades" class="uk-select" id="atividades">
+              <option value="eletricista">------       Adicione as Atiivdades da Empresa   ------</option>
+              <option value="eletricista">Eletricista</option>
+              <option value="">Desenvolvedor de Software</option>
+               <option value="">Pintor</option>
+               <option value="">Pintor</option>
+            </select>
+       
+          </div>
+        </form>
+      </div>
+      <p uk-margin>
+        <button
+          class="uk-button uk-button-default uk-align-right uk-modal-close"
+        >
+          Fechar
+        </button>
+      </p>
+      </div>
+     
     </div>
   </div>
 </template>
@@ -42,8 +125,18 @@
 <script>
 export default {
   name: "EaModal",
-  props:['cardClass']
-   
+  props:['cardClass'],
+  data () {
+      return { 
+        isCadastrar: false,
+      }
+    }, 
+
+  methods:{
+    cadastrar(){
+      this.isCadastrar = !this.isCadastrar
+    }
+  }
 
     }
 

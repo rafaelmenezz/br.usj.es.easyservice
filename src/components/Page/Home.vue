@@ -5,7 +5,7 @@
          <div class=" uk-margin-auto">
          <p>
             A EasyService plataforma de serivço digital destinada a conectar as ofertas com as demandas existentes no mercado. Destinada a empresas de pequeno porte a ofertarem seus serviços para qualquer usuário interessado.
-            E para você que busca um profissional, ou empresa, para um determinado tipo de serviço. <a class="#" uk-switcher-item="2">Entre e participe</a>.
+            E para você que busca um profissional, ou empresa, para um determinado tipo de serviço. Para se cadastrar <a class="#" uk-switcher-item="2">Clique aqui</a>.
  
          </p>
             

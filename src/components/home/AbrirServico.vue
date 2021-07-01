@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="uk-align-right uk-margin">
-          <button class="uk-button uk-button-default uk-modal-close">Cancelar</button>
+          <button class="uk-button uk-button-default uk-modal-close uk-margin-right">Cancelar</button>
           <button class="uk-button uk-button-primary">Salvar</button>
         </div>
       </form>

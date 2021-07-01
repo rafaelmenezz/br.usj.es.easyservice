@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueLayers from 'vuelayers'
 import App from './App.vue'
 import Page from './Page.vue'
-import 'vuelayers/lib/style.css' 
+
 
 
 
