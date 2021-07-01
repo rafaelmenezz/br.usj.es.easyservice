@@ -55,7 +55,7 @@
                 id="nome"
                 type="text"
                 placeholder=""
-                disabled
+                
               />
             </div>
           </div>
@@ -67,7 +67,7 @@
                 id="nome"
                 type="text"
                 placeholder=""
-                disabled
+                
               />
             </div>
           </div>
@@ -80,7 +80,7 @@
                 id="cnpj"
                 type="text"
                 placeholder="XX.XXX.XXX/YYYY-ZZ"
-                disabled
+                
               />
             </div>
           </div>
@@ -92,28 +92,38 @@
                 id="telefone"
                 type="text"
                 placeholder=""
-                disabled
+                
               />
             </div>
           </div>
            <div class="uk-margin uk-text-center">
             <label class="uk-form-label" for="nome">Atividades</label>
-            <select name="selectAtividades" class="uk-select" id="atividades">
-              <option value="eletricista">------       Adicione as Atiivdades da Empresa   ------</option>
-              <option value="eletricista">Eletricista</option>
-              <option value="">Desenvolvedor de Software</option>
-               <option value="">Pintor</option>
-               <option value="">Pintor</option>
-            </select>
-       
+   
+             
+            <input list="atividades" class="uk-input" name="browser" v-model="atividade" v-on:keyup.enter="addAtivi($event)">
+            <datalist id="atividades">
+                <option value="eletricista">Eletricista</option>
+                <option value="">Desenvolvedor de Software</option>
+                <option value="">Pintor</option>
+                <option value="">Pintor</option>
+           </datalist>
+           <div class="uk-margin" >
+              <span v-for="item in ativi" v-bind:key="item" class="uk-label uk-margin-right">{{item}}</span>
+           </div>
           </div>
+  
         </form>
       </div>
       <p uk-margin>
         <button
+          class="uk-button uk-button-primary uk-align-right uk-modal-close"
+        >
+          Salvar
+        </button>
+         <button
           class="uk-button uk-button-default uk-align-right uk-modal-close"
         >
-          Fechar
+          Cancelar
         </button>
       </p>
       </div>
@@ -129,13 +139,20 @@ export default {
   data () {
       return { 
         isCadastrar: false,
+        ativi: [],
+        atividade:'',
       }
     }, 
 
   methods:{
     cadastrar(){
       this.isCadastrar = !this.isCadastrar
+    },
+    addAtivi(event){
+      this.ativi.push(event.target.value)
+      this.atividade = ''
     }
+
   }
 
     }

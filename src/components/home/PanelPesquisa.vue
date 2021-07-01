@@ -37,7 +37,7 @@
         <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
 
           <li>
-            <a href="#abrir-servico" uk-toggle>Solicitar Serviço</a>
+            <a href="#abrir-servico" uk-toggle><span class="uk-icon uk-margin-small-right" uk-icon="icon: file-text; ratio: 1"></span>Solicitar Serviço</a>
           </li>
         </ul>
       </div>
